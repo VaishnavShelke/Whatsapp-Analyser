@@ -18,7 +18,7 @@ Below is the step by step process to be followed to generate the analysis :)
 
 ### Steps :
 - The user must intall chrome driver on his machine before procedding further.
-- The User enters his whatsapp profile name, the whatsapp groups he wants to analyze,the amount of chats he wants to analyze {Suggested minimum 40}
+- The User enters his whatsapp profile name, the whatsapp groups he wants to analyze,the amount of chats he wants to analyze {Suggested minimum 40}.
 
     ![Chat Preview](https://publicbucketresume.s3.ap-south-1.amazonaws.com/FormPage.PNG)
 
@@ -29,11 +29,22 @@ Below is the step by step process to be followed to generate the analysis :)
 - The selenium will scroll through the whatsapp chats automatically, parallely the Beautiful Soup libray will svae the rendered HTML pages to Document Object Model Objects
 - By the time the scrolling of the chats is over we will have a Python object representing the paresed HTML, this object acan be used to extract te values int the divs of our intreset,
 for example our major intrest in the analysis is the HTML element containing date, time, emojis, gifs, stickers and chats text.
+
+
 ![Chat Preview](https://publicbucketresume.s3.ap-south-1.amazonaws.com/Json.PNG)
+
+
 - The backend will extract all the necessary data and populate them in various predefined fields to for a json that summarizes the whataspp chats to be use for analysis.
-![Chat Preview](https://publicbucketresume.s3.ap-south-1.amazonaws.com/Chat+Contribution.PNG)
+
+
+    ![Chat Preview](https://publicbucketresume.s3.ap-south-1.amazonaws.com/Chat+Contribution.PNG)
+
+
 - The node backend will relay this json to react fronted, the json thus obtained forms the datasource for various chart js components to render charts giving infographics of the chats
-![Chat Preview](https://publicbucketresume.s3.ap-south-1.amazonaws.com/PieChart.PNG)
+
+
+    ![Chat Preview](https://publicbucketresume.s3.ap-south-1.amazonaws.com/PieChart.PNG)
+
 
 ---
 
